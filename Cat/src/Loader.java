@@ -1,4 +1,3 @@
-
 public class Loader
 {
     public static void main(String[] args)
@@ -19,14 +18,13 @@ public class Loader
         while (!vasya.getStatus().equals("Exploded")) {
             vasya.feed(100.00);
             System.out.println("Vasya weight: " + vasya.getWeight());
+            System.out.println("Vasya feed weight: " + vasya.getFeedWeight());
         }
         System.out.println("Vasya status: " + vasya.getStatus());
-        System.out.println("Vasya feed weight: " + vasya.getFeedWeight());
 
         Cat felix = new Cat();
         System.out.println("Felix weight: " + felix.getWeight());
         felix.pee();
         System.out.println("Felix weight: " + felix.getWeight());
-
     }
 }

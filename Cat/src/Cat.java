@@ -1,5 +1,3 @@
-import java.util.stream.IntStream;
-
 public class Cat
 {
     private double originWeight;
@@ -16,19 +14,16 @@ public class Cat
         maxWeight = 9000.0;
 
     }
-
-    public void pee()
-    {
-        weight = weight - 300;
-        System.out.println("Oh yeah");
-    }
-
     public void meow()
     {
         weight = weight - 100;
         System.out.println("Meow");
     }
-
+    public void pee()
+    {
+        weight = weight - 300;
+        System.out.println("Oh yeah");
+    }
     public void feed(Double amount)
     {
         weight = weight + amount;
@@ -48,7 +43,6 @@ public class Cat
         Double result = weight - originWeight;
         return (result < 0) ? 0 : result;
     }
-
     public String getStatus()
     {
         if(weight < minWeight) {
